@@ -14,7 +14,7 @@ class CompaniesController < ApplicationController
     # render view with new Company form
   end
 
-  # def create
+  def create
   #   # start with a new Company
       @company = Company.new
   #   # assign user-entered form data to Company's columns
@@ -25,7 +25,7 @@ class CompaniesController < ApplicationController
       @company.save
   #   # redirect user
       redirect_to "/companies"
-  # end
+  end
 
   # def edit
   #   # find a Company
